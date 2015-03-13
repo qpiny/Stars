@@ -31,7 +31,6 @@ object Main extends App {
     val program = context.createProgram(getClass.getResourceAsStream("/Newton.cl")).build();
 
     // A, B are input buffers, C is for the result
-    context.create
     val clBufferA = context.createFloatBuffer(globalWorkSize, READ_ONLY);
     val clBufferB = context.createFloatBuffer(globalWorkSize, READ_ONLY);
     val clBufferC = context.createFloatBuffer(globalWorkSize, WRITE_ONLY);
